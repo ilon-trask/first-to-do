@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="list.js" defer></script>
+    <script src="item.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <nav>
+        <ul class="list-area">
+          <div class="menu">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <!-- <li class="list">На сьогодні</li> -->
+          <li class="list active-li">Всі</li>
+          <li class="list">Важливі</li>
+          <!-- <li class="list">На потім</li> -->
+          <hr />
+          <div class="area">
+            <!-- <li class="list-item list">Якась</li> -->
+          </div>
+          <li class="item-create">
+            <svg
+              class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+              fill="currentColor"
+              aria-hidden="true"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2.5a.5.5 0 00-1 0V9H2.5a.5.5 0 000 1H9v6.5a.5.5 0 001 0V10h6.5a.5.5 0 000-1H10V2.5z"
+                fill="var(--li-active)"
+              ></path>
+            </svg>
+            <input type="text" value="" id="create-list" />
+          </li>
+        </ul>
+      </nav>
+      <div class="work-space">
+        <div class="work-space__list-name">
+          <div class="list-name__info">
+            <div class="menu itmes-menu">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+
+            <p class="list-name__name">Всі</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="work-space__items-area">
+          <div class="work-space__item-create work-space__item">
+            <div class="item-create">
+              <div class="checkbox"></div>
+              <input type="text" value="" id="create-item" />
+            </div>
+            <hr />
+            <!-- <div class="item-create__feachers"><p>установити термін</p></div> -->
+          </div>
+          <div class="items-area">
+            <!-- <div class="work-space__item item">
+              <div class="item-done">
+                <div class="checkbox"></div>
+                <p>lsadjf</p>
+              </div>
+              <div>
+                <svg
+                  viewBox="0 0 448 512"
+                  fill="var(--li-active)"
+                  width="20"
+                  height="20"
+                  class="item-delet"
+                >
+                  <path
+                    d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+                  />
+                </svg>
+                <svg class="imp" fill="var(--bg-color)" width="20" height="20">
+                  <path
+                    d="M9.1 2.9a1 1 0 011.8 0l1.93 3.91 4.31.63a1 1 0 01.56 1.7l-3.12 3.05.73 4.3a1 1 0 01-1.45 1.05L10 15.51l-3.86 2.03a1 1 0 01-1.45-1.05l.74-4.3L2.3 9.14a1 1 0 01.56-1.7l4.31-.63L9.1 2.9z"
+                    stroke=" var(--li-active)"
+                  ></path>
+                </svg>
+              </div>
+            </div> -->
+          </div>
+          <div class="done-items-area"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

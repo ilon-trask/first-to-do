@@ -1,0 +1,172 @@
+:root {
+  --main: rgb(255, 255, 255);
+  --bg-color: rgb(19, 19, 19);
+  --li-active: rgb(0, 150, 255);
+  --li-hover: rgb(0, 124, 190);
+  --sdf: rgb(0, 129, 175);
+  --scrollbar-bg: rgba(43, 42, 42, 0.8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border: 0;
+  font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
+  box-sizing: border-box;
+  color: var(--main);
+}
+body {
+  background-color: var(--bg-color);
+}
+nav {
+  width: 17vw;
+  min-width: 241px;
+  height: 100vh;
+  background: var(--bg-color);
+  border-right: 1px solid var(--main);
+}
+ul {
+  list-style: none;
+  user-select: none;
+  padding: 15px 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.menu {
+  width: 20px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 15px 0 15px 15px;
+  cursor: pointer;
+}
+.menu p {
+  width: 20px;
+  height: 1px;
+  background-color: var(--main);
+  margin: 0;
+}
+li {
+  font-size: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+ul hr {
+  height: 1px;
+  margin: 0 15px;
+  background-color: var(--main);
+}
+.hover {
+  background-color: var(--li-hover);
+}
+.active-li {
+  background-color: var(--li-active);
+}
+.item-create {
+  display: flex;
+  color: var(--li-active);
+}
+.item-create span {
+  margin-left: 5px;
+}
+main {
+  display: flex;
+}
+.work-space {
+  width: 85vw;
+  height: 100vh;
+  padding: 15px;
+  overflow-y: scroll;
+}
+.work-space__items-area {
+  margin-top: 30px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  line-height: 0px;
+  font-size: 15px;
+  color: var(--li-active);
+}
+.checkbox {
+  height: 20px;
+  width: 20px;
+  border: 2px var(--li-active) solid;
+  border-radius: 100px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.work-space__item {
+  padding: 15px;
+  box-shadow: 1px 1px 4px var(--main);
+}
+.items-area {
+  margin-top: 14px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.item-done {
+  display: flex;
+  cursor: pointer;
+}
+.item svg {
+  cursor: pointer;
+}
+.item + .item {
+  margin-top: 14px;
+}
+.work-space__item-create hr {
+  height: 1px;
+
+  background: var(--main);
+  margin: 15px 10px;
+}
+.active-svg {
+  fill: var(--li-active);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-bg);
+}
+.list-name__info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.itmes-menu {
+  margin: 0;
+  margin-right: 10px;
+}
+.imp {
+  margin-left: 5px;
+}
+.done-items-area {
+  margin-top: 15px;
+}
+.done .item-done {
+  text-decoration: line-through;
+  cursor: auto;
+}
+.done .checkbox {
+  background: var(--li-active);
+  cursor: auto;
+}
+.done-label {
+  margin-bottom: 15px;
+}
